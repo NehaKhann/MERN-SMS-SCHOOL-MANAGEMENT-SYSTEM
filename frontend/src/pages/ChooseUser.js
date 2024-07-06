@@ -17,7 +17,7 @@ import Popup from '../components/Popup';
 const ChooseUser = ({ visitor }) => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  const password = "Khan!@#2000"
+  const password = "testing"
 
   const { status, currentUser, currentRole } = useSelector(state => state.user);;
 
@@ -53,7 +53,7 @@ const ChooseUser = ({ visitor }) => {
 
     else if (user === "Teacher") {
       if (visitor === "guest") {
-        const email = "n.nehakhan333@gmail.com"
+        const email = "sadaf@gmail.com"
         const fields = { email, password }
         setLoader(true)
         dispatch(loginUser(fields, user))
